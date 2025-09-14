@@ -1,22 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<UMLetDiagram version="14.3">
-  <element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>180</w><h>100</h></coordinates><panel_attributes>Computadora
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>180</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Computadora
 --
 +marca: String
 +numeroSerie: String
 --
 +placaMadre: PlacaMadre
-+propietario: Propietario</panel_attributes></element>
-  <element><id>UMLClass</id><coordinates><x>250</x><y>20</y><w>170</w><h>80</h></coordinates><panel_attributes>PlacaMadre
++propietario: Propietario</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>20</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>PlacaMadre
 --
 +modelo: String
-+chipset: String</panel_attributes></element>
-  <element><id>UMLClass</id><coordinates><x>250</x><y>130</y><w>160</w><h>80</h></coordinates><panel_attributes>Propietario
++chipset: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>130</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Propietario
 --
 +nombre: String
-+dni: String</panel_attributes></element>
-  <element><id>Relation</id><coordinates><x>170</x><y>40</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;&gt;&gt;
-composition</panel_attributes></element>
-  <element><id>Relation</id><coordinates><x>160</x><y>80</y><w>120</w><h>90</h></coordinates><panel_attributes>lt=&lt;-&gt;
-association</panel_attributes></element>
-</UMLetDiagram>
++dni: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>40</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>80</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>110.0;60.0;10.0;30.0</additional_attributes>
+  </element>
+</diagram>
