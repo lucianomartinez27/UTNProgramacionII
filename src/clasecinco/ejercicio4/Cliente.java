@@ -10,4 +10,7 @@ public class Cliente {
         this.dni = dni;
     }
 
+    public void setTarjeta(TarjetaDeCredito tarjeta) {
+        this.tarjeta = tarjeta;
+    }
 }

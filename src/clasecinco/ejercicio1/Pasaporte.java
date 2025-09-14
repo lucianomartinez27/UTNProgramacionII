@@ -14,4 +14,8 @@ public class Pasaporte {
         this.foto = new Foto(imagen, formato);
         this.titular = titular;
     }
+
+    public void setTitular(Titular titular) {
+        this.titular = titular;
+    }
 }

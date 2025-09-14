@@ -8,9 +8,13 @@ public class Reserva {
     private Cliente cliente;
     private Mesa mesa;
 
-    public Reserva(String fecha, String hora) {
+    public Reserva(String fecha, String hora, Mesa mesa) {
         this.fecha = fecha;
         this.hora = hora;
+        this.mesa = mesa;
     }
 
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 }

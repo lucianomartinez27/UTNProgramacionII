@@ -1,71 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>20</x>
-      <y>20</y>
-      <w>170</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>CitaMedica
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>170</w><h>100</h></coordinates><panel_attributes>CitaMedica
 --
 +fecha: String
 +hora: String
 --
 +paciente: Paciente
-+profesional: Profesional</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>260</x>
-      <y>20</y>
-      <w>150</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>Paciente
++profesional: Profesional</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>20</y><w>150</w><h>80</h></coordinates><panel_attributes>Paciente
 --
 +nombre: String
-+obraSocial: String</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>260</x>
-      <y>130</y>
-      <w>170</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>Profesional
++obraSocial: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>120</y><w>170</w><h>80</h></coordinates><panel_attributes>Profesional
 --
 +nombre: String
-+especialidad: String</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>180</x>
-      <y>40</y>
-      <w>100</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>190</x>
-      <y>80</y>
-      <w>90</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>80.0;60.0;10.0;30.0</additional_attributes>
-  </element>
-</diagram>
++especialidad: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>40</y><w>160</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>140;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>90</y><w>150</w><h>100</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>130;80;10;10</additional_attributes></element></diagram>

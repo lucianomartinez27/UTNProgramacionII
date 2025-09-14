@@ -10,4 +10,7 @@ public class Propietario {
         this.dni = dni;
     }
 
+    public void setComputadora(Computadora computadora) {
+        this.computadora = computadora;
+    }
 }

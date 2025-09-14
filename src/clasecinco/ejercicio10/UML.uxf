@@ -1,0 +1,18 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>170</w><h>100</h></coordinates><panel_attributes>CuentaBancaria
+--
++cbu: String
++saldo: String
++claveSeguridad: ClaveSeguridad
++titular:Titular
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>20</y><w>150</w><h>80</h></coordinates><panel_attributes>ClaveSeguridad
+--
++codigo: String
++ultimaModificacion: Date</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>120</y><w>170</w><h>80</h></coordinates><panel_attributes>Titular
+--
++nombre: String
++dni: String
+-cuentaBancaria: CuentaBancaria</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>90</y><w>150</w><h>90</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;130;70</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>40</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element></diagram>

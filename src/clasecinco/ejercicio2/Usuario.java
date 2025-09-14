@@ -9,4 +9,8 @@ public class Usuario {
         this.nombre = nombre;
         this.dni = dni;
     }
+
+    public void setCelular(Celular celular) {
+        this.celular = celular;
+    }
 }

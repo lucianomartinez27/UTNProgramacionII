@@ -10,4 +10,7 @@ public class Titular {
         this.dni = dni;
     }
 
+    public void setPasaporte(Pasaporte pasaporte) {
+        this.pasaporte = pasaporte;
+    }
 }

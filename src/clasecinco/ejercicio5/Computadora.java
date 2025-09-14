@@ -14,4 +14,7 @@ public class Computadora {
         this.placaMadre = new PlacaMadre(modeloPlaca, chipset);
     }
 
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
+    }
 }

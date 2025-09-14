@@ -13,4 +13,11 @@ public class TarjetaDeCredito {
         this.fechaVencimiento = fechaVencimiento;
     }
 
+    public void setBanco(Banco banco) {
+        this.banco = banco;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 }
