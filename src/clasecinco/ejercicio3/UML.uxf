@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UMLetDiagram version="14.3">
+  <element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>150</w><h>100</h></coordinates><panel_attributes>Libro
+--
++titulo: String
++isbn: String
+--
++autor: Autor
++editorial: Editorial</panel_attributes></element>
+  <element><id>UMLClass</id><coordinates><x>240</x><y>20</y><w>140</w><h>80</h></coordinates><panel_attributes>Autor
+--
++nombre: String
++nacionalidad: String</panel_attributes></element>
+  <element><id>UMLClass</id><coordinates><x>240</x><y>130</y><w>160</w><h>80</h></coordinates><panel_attributes>Editorial
+--
++nombre: String
++direccion: String</panel_attributes></element>
+  <element><id>Relation</id><coordinates><x>140</x><y>40</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+association</panel_attributes></element>
+  <element><id>Relation</id><coordinates><x>130</x><y>80</y><w>120</w><h>90</h></coordinates><panel_attributes>lt=&lt;.&gt;
+aggregation</panel_attributes></element>
+</UMLetDiagram>

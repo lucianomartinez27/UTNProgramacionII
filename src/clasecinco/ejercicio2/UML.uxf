@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UMLetDiagram version="14.3">
+  <element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>150</w><h>110</h></coordinates><panel_attributes>Celular
+--
++imei: String
++marca: String
++modelo: String
+--
++bateria: Bateria
++usuario: Usuario</panel_attributes></element>
+  <element><id>UMLClass</id><coordinates><x>240</x><y>20</y><w>140</w><h>90</h></coordinates><panel_attributes>Bateria
+--
++modelo: String
++capacidad: int</panel_attributes></element>
+  <element><id>UMLClass</id><coordinates><x>240</x><y>150</y><w>150</w><h>90</h></coordinates><panel_attributes>Usuario
+--
++nombre: String
++dni: String</panel_attributes></element>
+  <element><id>Relation</id><coordinates><x>140</x><y>40</y><w>110</w><h>40</h></coordinates><panel_attributes>lt=&lt;.&gt;
+aggregation</panel_attributes></element>
+  <element><id>Relation</id><coordinates><x>140</x><y>90</y><w>120</w><h>110</h></coordinates><panel_attributes>lt=&lt;-&gt;
+association</panel_attributes></element>
+</UMLetDiagram>

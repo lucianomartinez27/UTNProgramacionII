@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UMLetDiagram version="14.3">
+  <element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>160</w><h>100</h></coordinates><panel_attributes>Vehiculo
+--
++patente: String
++modelo: String
+--
++motor: Motor
++conductor: Conductor</panel_attributes></element>
+  <element><id>UMLClass</id><coordinates><x>240</x><y>20</y><w>140</w><h>80</h></coordinates><panel_attributes>Motor
+--
++tipo: String
++numeroSerie: String</panel_attributes></element>
+  <element><id>UMLClass</id><coordinates><x>240</x><y>130</y><w>160</w><h>80</h></coordinates><panel_attributes>Conductor
+--
++nombre: String
++licencia: String</panel_attributes></element>
+  <element><id>Relation</id><coordinates><x>150</x><y>40</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;.&gt;
+aggregation</panel_attributes></element>
+  <element><id>Relation</id><coordinates><x>150</x><y>80</y><w>120</w><h>90</h></coordinates><panel_attributes>lt=&lt;-&gt;
+association</panel_attributes></element>
+</UMLetDiagram>
