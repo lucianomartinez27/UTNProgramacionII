@@ -807,8 +807,6 @@ public class CodigoQR {
         this.usuario = usuario;
     }
 
-    public String getValor() { return valor; }
-    public Usuario getUsuario() { return usuario; }
 }
 ```
 
@@ -825,8 +823,6 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getNombre() { return nombre; }
-    public String getEmail() { return email; }
 }
 ```
 
@@ -837,15 +833,14 @@ package clasecinco.ejercicio13;
 // Dependencia de creación: GeneradorQR.generar(String, Usuario)
 public class GeneradorQR {
 
-    public void generar(String valor, Usuario usuario) {
+    public CodigoQR generar(String valor, Usuario usuario) {
         // Crea un CodigoQR pero no lo conserva como atributo
-        if (valor == null) valor = "";
-        CodigoQR qr = new CodigoQR(valor, usuario);
-        // Simulación mínima de uso inmediato
-        System.out.println("QR generado para usuario: " + (usuario != null ? usuario.getNombre() : "(desconocido)") +
-                " con valor: " + qr.getValor());
+        CodigoQR qr = new CodigoQR(valor);
+        qr.setUsuario(usuario);
+        return qr;
     }
 }
+
 ```
 
 Diagrama:
@@ -900,13 +895,11 @@ package clasecinco.ejercicio14;
 // Dependencia de creación: EditorVideo.exportar(String, Proyecto)
 public class EditorVideo {
 
-    public void exportar(String formato, Proyecto proyecto) {
+    public Render exportar(String formato, Proyecto proyecto) {
         // Crea un Render pero no lo conserva como atributo
-        if (formato == null) formato = "mp4";
-        Render render = new Render(formato, proyecto);
-        // Simulación mínima de uso inmediato
-        System.out.println("Exportando proyecto '" + (proyecto != null ? proyecto.getNombre() : "(sin nombre)") +
-                "' en formato: " + render.getFormato());
+        Render render = new Render(formato);
+        render.setProyecto(proyecto);
+        return render;
     }
 }
 ```
