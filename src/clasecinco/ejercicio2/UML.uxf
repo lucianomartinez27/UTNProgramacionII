@@ -1,17 +1,23 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>150</w><h>110</h></coordinates><panel_attributes>Celular
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>190</w><h>150</h></coordinates><panel_attributes>Celular
 --
-+imei: String
-+marca: String
-+modelo: String
+-imei: String
+-marca: String
+-modelo: String
+-bateria: Bateria
+-usuario: Usuario
 --
-+bateria: Bateria
-+usuario: Usuario</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>20</y><w>140</w><h>90</h></coordinates><panel_attributes>Bateria
++setBateria(b: Bateria): void
++setUsuario(u: Usuario): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>20</y><w>160</w><h>110</h></coordinates><panel_attributes>Bateria
 --
-+modelo: String
-+capacidad: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>140</y><w>150</w><h>90</h></coordinates><panel_attributes>Usuario
+-modelo: String
+-capacidad: int
 --
-+nombre: String
-+dni: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>100</y><w>170</w><h>100</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>140</y><w>170</w><h>110</h></coordinates><panel_attributes>Usuario
+--
+-nombre: String
+-dni: String
+--
+~setCelular(c: Celular): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>120</y><w>190</w><h>80</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1</panel_attributes><additional_attributes>10;10;150;80</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>50</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element></diagram>
+m2=1</panel_attributes><additional_attributes>10;10;170;60</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>50</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element></diagram>

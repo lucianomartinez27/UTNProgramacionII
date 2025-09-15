@@ -1,15 +1,20 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>160</w><h>110</h></coordinates><panel_attributes>Pasaporte
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>200</w><h>140</h></coordinates><panel_attributes>Pasaporte
 --
-+numero: String
-+fechaEmision: String
+-numero: String
+-fechaEmision: String
+-foto: Foto
+-titular: Titular
 --
-+foto: Foto
-+titular: Titular</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>40</y><w>140</w><h>80</h></coordinates><panel_attributes>Foto
++setTitular(t: Titular): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>40</y><w>160</w><h>100</h></coordinates><panel_attributes>Foto
 --
-+imagen: String
-+formato: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>140</y><w>160</w><h>90</h></coordinates><panel_attributes>Titular
+-imagen: String
+-formato: String
 --
-+nombre: String
-+dni: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>50</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>30;10;10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>90</y><w>160</w><h>120</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>160</y><w>210</w><h>110</h></coordinates><panel_attributes>Titular
+--
+-nombre: String
+-dni: String
+--
++setPasaporte(p: Pasaporte): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>50</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>100</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1</panel_attributes><additional_attributes>10;10;140;100</additional_attributes></element></diagram>
+m2=1</panel_attributes><additional_attributes>10;10;130;90</additional_attributes></element></diagram>

@@ -1,17 +1,23 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>90</y><w>190</w><h>100</h></coordinates><panel_attributes>TarjetaDeCredito
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>90</y><w>220</w><h>150</h></coordinates><panel_attributes>TarjetaDeCredito
 --
-+numero: String
-+fechaVencimiento: String
+-numero: String
+-fechaVencimiento: String
+-cliente: Cliente
+-banco: Banco
 --
-+cliente: Cliente
-+banco: Banco</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>90</y><w>160</w><h>80</h></coordinates><panel_attributes>Cliente
++setCliente(c: Cliente): void
++setBanco(b: Banco): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>90</y><w>180</w><h>120</h></coordinates><panel_attributes>Cliente
 --
-+nombre: String
-+dni: String
-+tarjeta:TarjetaDeCredito</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>220</y><w>140</w><h>80</h></coordinates><panel_attributes>Banco
+-nombre: String
+-dni: String
+-tarjeta: TarjetaDeCredito
 --
-+nombre: String
-+cuit: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>130</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=-
+~setTarjeta(t: TarjetaDeCredito): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>220</y><w>160</w><h>100</h></coordinates><panel_attributes>Banco
+--
+-nombre: String
+-cuit: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>130</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>160</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;150;100</additional_attributes></element></diagram>
+m2=1</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>180</y><w>170</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=1</panel_attributes><additional_attributes>10;10;150;80</additional_attributes></element></diagram>

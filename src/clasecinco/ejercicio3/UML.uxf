@@ -1,15 +1,19 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>10</y><w>150</w><h>100</h></coordinates><panel_attributes>Libro
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>10</y><w>170</w><h>140</h></coordinates><panel_attributes>Libro
 --
-+titulo: String
-+isbn: String
+-titulo: String
+-isbn: String
+-autor: Autor
+-editorial: Editorial
 --
-+autor: Autor
-+editorial: Editorial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>10</y><w>140</w><h>80</h></coordinates><panel_attributes>Autor
++setAutor(a: Autor): void
++setEditorial(e: Editorial): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>10</y><w>140</w><h>100</h></coordinates><panel_attributes>Autor
 --
-+nombre: String
-+nacionalidad: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>120</y><w>160</w><h>80</h></coordinates><panel_attributes>Editorial
+-nombre: String
+-nacionalidad: String
 --
-+nombre: String
-+direccion: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>40</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
-m1=1</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>80</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;80;90</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>130</y><w>160</w><h>100</h></coordinates><panel_attributes>Editorial
+--
+-nombre: String
+-direccion: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>40</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>80</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;100</additional_attributes></element></diagram>

@@ -1,15 +1,19 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>150</w><h>100</h></coordinates><panel_attributes>Reserva
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>190</w><h>140</h></coordinates><panel_attributes>Reserva
 --
-+fecha: String
-+hora: String
+-fecha: String
+-hora: String
+-cliente: Cliente
+-mesa: Mesa
 --
-+cliente: Cliente
-+mesa: Mesa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>30</y><w>150</w><h>80</h></coordinates><panel_attributes>Cliente
++setCliente(c: Cliente): void
++setMesa(m: Mesa): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>20</y><w>160</w><h>100</h></coordinates><panel_attributes>Cliente
 --
-+nombre: String
-+telefono: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>130</y><w>140</w><h>80</h></coordinates><panel_attributes>Mesa
+-nombre: String
+-telefono: String
 --
-+numero: int
-+capacidad: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>40</y><w>220</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
-m1=1</panel_attributes><additional_attributes>200;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>90</y><w>220</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m2=1</panel_attributes><additional_attributes>10;10;200;70</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>140</y><w>160</w><h>100</h></coordinates><panel_attributes>Mesa
+--
+-numero: int
+-capacidad: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>50</y><w>220</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>200;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>110</y><w>230</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;60</additional_attributes></element></diagram>
